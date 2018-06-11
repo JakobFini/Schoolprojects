@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dddddd;
+}
+
+/*images*/
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+
+/*text*/
+
+p {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    color: #2d2d2d;
+    letter-spacing: 2px;
+    line-height: 1.6;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+}
+
+h3 {
+    font-family: 'Sunflower', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+/*heading*/
+
+h2 {
+    text-align: center;
+}
+
+/*Link*/
+
+a {
+    cursor: pointer;
+}
+
+/*Top Menu*/
+
+header nav ul {
+    font-family: 'Sunflower', sans-serif;
+    letter-spacing: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2vw;
+    background-color: #9b9b9b;
+    box-shadow: 0px 4px 0px grey;
+
+}
+
+header nav ul li {
+    font-family: 'Sunflower', sans-serif;
+    letter-spacing: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 2vw;
+    background-color: #9b9b9b;
+
+}
+
+/*content*/
+
+.container {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+/*School*/
+
+.nav_school {
+    padding-top: 100px;
+    font-family: 'Sunflower', sans-serif;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    line-height: 2;
+
+
+
+}
+
+.nav_school a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #2d2d2d;
+    padding-top: 15px;
+    font-size: 3vw;
+
+}
+
+.nav_school a:hover {
+    color: #ff7b03;
+}
+
+/* link styling*/
+
+a {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+a:hover {
+    color: #ff7b03;
+}
+
+.links {
+    text-align: center;
+}
+
+
+/*sizing content*/
+
+.col_wide {
+    max-width: 40vw;
+    padding: 20px 20px 20px 20px;
+    min-width: 280px;
+}
+
+.col_narrow {
+    max-width: 30vw;
+    min-width: 280px;
+    padding: 20px 20px 20px 20px;
+}
+
+.col_bottom {
+    width: 100%;
+    min-width: 280px;
+    padding: 20px 20px 20px 20px;
+}
+
+/* flexbox */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*list nav*/
+
+ul {
+    list-style-type: none;
+
+}
+
+li {
+    display: inline;
+}
+
+/* Mediaquery */
+
+@media screen and (max-width: 1400px) {
+
+    .burger_nav {
+        display: block;
+        height: 40px;
+        width 100%;
+        background: url(images/burger-menu.png) no-repeat 2% center;
+
+    }
+    header nav ul {
+        overflow: hidden;
+        height: 0;
+    }
+    header nav ul.open {
+        height: auto;
+    }
+    header nav ul li {
+        float: none;
+        display: block;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+    }
+
+}
